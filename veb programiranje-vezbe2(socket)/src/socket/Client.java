@@ -21,7 +21,7 @@ public class Client {
 			
 			sock = new Socket(addr,port);
 			
-			String poruka = "Klijent salje poruku serveru";
+			String poruka = "Klijent salje poruku serveru, Naucili smo nesto o gitu";
 			PrintWriter writer = new PrintWriter(new OutputStreamWriter(sock.getOutputStream()), true);
 			writer.println(poruka);
 			
